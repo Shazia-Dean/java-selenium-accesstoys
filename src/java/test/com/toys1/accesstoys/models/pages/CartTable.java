@@ -67,15 +67,11 @@ public class CartTable {
 		//clear the box
 		 		cell.clear();
 		//send keys
-		 		tableElement.findElement(rowCells).sendKeys("3");;
-	}
-	}	
+		 		tableElement.findElement(rowCells).sendKeys("3");
+		 	}
+		}	
 	}
 	
-	public void getSubTotalOfSmileyFace() {
-			
-			
-		}
 	//delete row
 	public void ClickDeleteRowButton(String itemName) throws Exception {
 			//find the index of the action column
@@ -85,17 +81,14 @@ public class CartTable {
 			//get a list of table cells for the returned row
 		List<WebElement> rows = tableElement.findElements(tableRows);
 		for(WebElement row: rows) {
-		List<WebElement> cell = row.findElements(rowCells);
+			List<WebElement> cell = row.findElements(rowCells);
 			//jump to the index location in that list for the action column and find element for button
-		 if(cell.get(actionCol).getText().equals(itemName)) {
+			if(cell.get(actionCol).getText().equals(itemName)) {
 			//click the button
-			 tableElement.findElement(deleterow).click();
+				tableElement.findElement(deleterow).click();
+			}
+		}
 	}
-	
-	
-
-		
-		
-		
+			
 }
 

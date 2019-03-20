@@ -13,7 +13,7 @@ import com.toys1.accesstoys.models.pages.ShopPage;
 
 
 
-public class ShopePageTest extends BaseTestSuit{
+public class ShopPageTests extends BaseTestSuit{
 
 	@Test
 	public void verifyProductNameandPrice() throws Exception {
@@ -61,7 +61,7 @@ public class ShopePageTest extends BaseTestSuit{
 	
 	
 	@Test
-	public void verifyTableContents() {
+	public void verifyTableContents() throws Exception {
 		
 	
 		HomePage homePage = new HomePage(driver);

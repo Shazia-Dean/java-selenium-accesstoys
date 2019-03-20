@@ -10,7 +10,7 @@ import com.toys1.accesstoys.models.pages.LoginPage;
 
 
 
-public class LoginTestPage extends BaseTestSuit {
+public class LoginPageTests extends BaseTestSuit {
 
 	@Test
 	public void loginErrorMessage() {

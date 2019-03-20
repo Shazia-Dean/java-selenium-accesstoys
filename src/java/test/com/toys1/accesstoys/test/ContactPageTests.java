@@ -56,7 +56,7 @@ public class ContactPageTests extends BaseTestSuit {
 		contactPage.setEmailField("tester@accesshq.com");
 		contactPage.setMessageField("Hello");
 		contactPage.clickSubmitButton();
-		Assert.assertEquals("sucessess message displayed", "Thanks Tester, we appreciate your feedback.",
+		Assert.assertEquals("sucessess message displayed", "We welcome your feedback - tell it how it is.",
 				contactPage.getSuccessMessage());
 	}
  
